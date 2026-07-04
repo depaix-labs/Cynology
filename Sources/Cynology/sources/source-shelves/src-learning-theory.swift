@@ -127,6 +127,23 @@ public extension CynologySources {
         // old: CynologyLearningSource.vogel_sprott_partial_reward_resistance_punishment_subsequent_extinction
         case partial_reward_resistance_to_punishment
 
+        // MARK: - AlternativeResponsePunishment
+
+        case punishment_by_noise_alternative_response
+        case punishment_overview_modern
+        case punishment_dynamic_choice
+        case escalating_constant_punishment_intensity
+        case evolutionary_theory_punishment_dynamics
+        case alternative_reinforcement_punishment_resurgence
+        case alternative_behavior_punishment_resurgence
+        case replacing_problem_behavior_tactical_alternatives
+        case alternative_response_relative_reinforcement
+        case choice_technique_selective_punishment
+        case reinforcement_competing_behavior_extinction
+        case fixed_ratio_timeout_concurrent_vi
+        case preschool_timeout_alternative_response
+        case habitual_gambler_operant_techniques
+
         // MARK: - ResponseBlockingAndDisruption
 
         case varied_effects_of_punishment
@@ -790,6 +807,340 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .punishment_by_noise_alternative_response:
+                return CynologySources.entry(
+                    title: "Punishment by Noise in an Alternative Response Situation",
+                    location: CynologySources.doi_location(
+                        "10.1901/jeab.1964.7-185"
+                    ),
+                    authors: CynologySources.authors(
+                        "R. L. Herman, N. H. Azrin"
+                    ),
+                    date: CynologySources.published(
+                        "1964-03"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "7",
+                        issue: "2",
+                        pages: "185-188"
+                    ),
+                    doi: "10.1901/jeab.1964.7-185",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .punishment_overview_modern:
+                return CynologySources.entry(
+                    title: "Punishment",
+                    location: CynologySources.doi_location(
+                        "10.1016/B978-0-443-29009-1.00014-7"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rafaela M. Fontes, Cory Toegel, Forrest Toegel"
+                    ),
+                    date: CynologySources.published(
+                        "2026"
+                    ),
+                    container: ReferenceContainer(
+                        kind: .book,
+                        title: "Reference Module in Neuroscience and Biobehavioral Psychology",
+                        publisher: "Elsevier"
+                    ),
+                    doi: "10.1016/B978-0-443-29009-1.00014-7",
+                    kind: .book_chapter,
+                    channel: .scholarly,
+                    tags: facets
+                )
+
+            case .punishment_dynamic_choice:
+                return CynologySources.entry(
+                    title: "Punishment and dynamic choice: Assessment of the direct-suppression model",
+                    location: CynologySources.doi_location(
+                        "10.1002/jeab.4237"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rafaela M. Fontes, Timothy A. Shahan"
+                    ),
+                    date: CynologySources.published(
+                        "2025"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "123",
+                        issue: "2",
+                        pages: "158-175"
+                    ),
+                    doi: "10.1002/jeab.4237",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .escalating_constant_punishment_intensity:
+                return CynologySources.entry(
+                    title: "Effects of repeated exposure to escalating versus constant punishment intensity on response allocation",
+                    location: CynologySources.doi_location(
+                        "10.1002/jeab.766"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rafaela M. Fontes, Timothy A. Shahan"
+                    ),
+                    date: CynologySources.published(
+                        "2022"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "118",
+                        issue: "1",
+                        pages: "59-82"
+                    ),
+                    doi: "10.1002/jeab.766",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .evolutionary_theory_punishment_dynamics:
+                return CynologySources.entry(
+                    title: "An implementation of punishment in the evolutionary theory of behavior dynamics",
+                    location: CynologySources.doi_location(
+                        "10.1002/jeab.543"
+                    ),
+                    authors: CynologySources.authors(
+                        "J. J McDowell, Bryan Klapes"
+                    ),
+                    date: CynologySources.published(
+                        "2019"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "112",
+                        issue: "2",
+                        pages: "128-143"
+                    ),
+                    doi: "10.1002/jeab.543",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .alternative_reinforcement_punishment_resurgence:
+                return CynologySources.entry(
+                    title: "Resurgence of a target behavior suppressed by a combination of punishment and alternative reinforcement",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.beproc.2019.03.004"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rusty W. Nall, Jillian M. Rung, Timothy A. Shahan"
+                    ),
+                    date: CynologySources.published(
+                        "2019"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Behavioural Processes",
+                        volume: "162",
+                        pages: "177-183"
+                    ),
+                    doi: "10.1016/j.beproc.2019.03.004",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .alternative_behavior_punishment_resurgence:
+                return CynologySources.entry(
+                    title: "Punishment of an alternative behavior generates resurgence of a previously extinguished target behavior",
+                    location: CynologySources.doi_location(
+                        "10.1002/jeab.465"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rafaela M. Fontes, João C. Todorov, Timothy A. Shahan"
+                    ),
+                    date: CynologySources.published(
+                        "2018"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "110",
+                        issue: "2",
+                        pages: "171-184"
+                    ),
+                    doi: "10.1002/jeab.465",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .replacing_problem_behavior_tactical_alternatives:
+                return CynologySources.entry(
+                    title: "“Replacing” problem behavior: An analysis of tactical alternatives",
+                    location: CynologySources.doi_location(
+                        "10.1007/BF03392114"
+                    ),
+                    authors: CynologySources.authors(
+                        "James M. Johnston"
+                    ),
+                    date: CynologySources.published(
+                        "2006"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "The Behavior Analyst",
+                        volume: "29",
+                        issue: "1",
+                        pages: "1-11"
+                    ),
+                    doi: "10.1007/BF03392114",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .alternative_response_relative_reinforcement:
+                return CynologySources.entry(
+                    title: "Effects of Punishment in an Alternative Response Context as a Function of Relative Reinforcement Rate",
+                    location: CynologySources.doi_location(
+                        "10.1007/BF03394138"
+                    ),
+                    authors: CynologySources.authors(
+                        "Roger C. Katz"
+                    ),
+                    date: CynologySources.published(
+                        "1973"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "The Psychological Record",
+                        volume: "23",
+                        issue: "1",
+                        pages: "65-74"
+                    ),
+                    doi: "10.1007/BF03394138",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .choice_technique_selective_punishment:
+                return CynologySources.entry(
+                    title: "A Choice Technique to Assess the Effects of Selective Punishment on Fixed-Ratio Performance",
+                    location: CynologySources.doi_location(
+                        "10.1901/jeab.1970.13-57"
+                    ),
+                    authors: CynologySources.authors(
+                        "M. C. Davison"
+                    ),
+                    date: CynologySources.published(
+                        "1970"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "13",
+                        issue: "1",
+                        pages: "57-64"
+                    ),
+                    doi: "10.1901/jeab.1970.13-57",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .reinforcement_competing_behavior_extinction:
+                return CynologySources.entry(
+                    title: "Reinforcement of Competing Behavior during Extinction",
+                    location: CynologySources.doi_location(
+                        "10.1126/science.169.3942.301"
+                    ),
+                    authors: CynologySources.authors(
+                        "Harold Leitenberg, Richard A. Rawson, Kent Bath"
+                    ),
+                    date: CynologySources.published(
+                        "1970"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Science",
+                        volume: "169",
+                        issue: "3942",
+                        pages: "301-303"
+                    ),
+                    doi: "10.1126/science.169.3942.301",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .fixed_ratio_timeout_concurrent_vi:
+                return CynologySources.entry(
+                    title: "Fixed-Ratio Punishment by Timeout of Concurrent Variable-Interval Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1901/jeab.1968.11-609"
+                    ),
+                    authors: CynologySources.authors(
+                        "John R. Thomas"
+                    ),
+                    date: CynologySources.published(
+                        "1968"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the Experimental Analysis of Behavior",
+                        volume: "11",
+                        issue: "5",
+                        pages: "609-616"
+                    ),
+                    doi: "10.1901/jeab.1968.11-609",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .preschool_timeout_alternative_response:
+                return CynologySources.entry(
+                    title: "The effects of time-out from positive reinforcement on the operant behavior of preschool children",
+                    location: CynologySources.doi_location(
+                        "10.1016/0022-0965(69)90052-6"
+                    ),
+                    authors: CynologySources.authors(
+                        "Robert H. Willoughby"
+                    ),
+                    date: CynologySources.published(
+                        "1969"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of Experimental Child Psychology",
+                        volume: "7",
+                        issue: "2",
+                        pages: "299-313"
+                    ),
+                    doi: "10.1016/0022-0965(69)90052-6",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .habitual_gambler_operant_techniques:
+                return CynologySources.entry(
+                    title: "Treatment of an Habitual Gambler by Operant Techniques in a Penal Setting",
+                    location: CynologySources.doi_location(
+                        "10.1177/000486587200500207"
+                    ),
+                    authors: CynologySources.authors(
+                        "Donald A. Sandford, Susan M. Fitchett"
+                    ),
+                    date: CynologySources.published(
+                        "1972"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Australian & New Zealand Journal of Criminology",
+                        volume: "5",
+                        issue: "2",
+                        pages: "114-122"
+                    ),
+                    doi: "10.1177/000486587200500207",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .varied_effects_of_punishment:
                 return CynologySources.entry(
                     title: "The Varied Effects of Punishment on Behavior",
@@ -1249,6 +1600,43 @@ public extension CynologySources {
                 return .cynology(
                     .learning_theory,
                     .punishment
+                )
+
+            case .punishment_overview_modern,
+                 .punishment_by_noise_alternative_response,
+                 .punishment_dynamic_choice,
+                 .escalating_constant_punishment_intensity,
+                 .evolutionary_theory_punishment_dynamics,
+                 .alternative_response_relative_reinforcement,
+                 .fixed_ratio_timeout_concurrent_vi,
+                 .choice_technique_selective_punishment:
+                return .cynology(
+                    .learning_theory,
+                    .operant_conditioning,
+                    .punishment,
+                    .reinforcement
+                )
+
+            case .alternative_reinforcement_punishment_resurgence,
+                 .alternative_behavior_punishment_resurgence,
+                 .reinforcement_competing_behavior_extinction:
+                return .cynology(
+                    .learning_theory,
+                    .punishment,
+                    .reinforcement,
+                    .extinction,
+                    .behavioral_persistence
+                )
+
+            case .preschool_timeout_alternative_response,
+                 .habitual_gambler_operant_techniques,
+                 .replacing_problem_behavior_tactical_alternatives:
+                return .cynology(
+                    .learning_theory,
+                    .punishment,
+                    .reinforcement,
+                    .behavior_modification,
+                    .methodology
                 )
 
             case .varied_effects_of_punishment,

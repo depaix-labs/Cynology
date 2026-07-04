@@ -184,6 +184,7 @@ public extension CynologySources {
 
         // old: CynologyCommunicationSource.warda_interspecies_emotional_labour_guide_dog_work
         case interspecies_emotional_labour
+        case dogs_today_society_applied_animal_behavior
         case herding_dog_training_interactivity
 
         case trainability_proxy_attachment_construct_validity
@@ -1339,6 +1340,31 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .dogs_today_society_applied_animal_behavior:
+                return CynologySources.entry(
+                    title: "Dogs in today's society: The role of applied animal behavior",
+                    location: CynologySources.doi_location(
+                        "10.1017/9781139161800.012"
+                    ),
+                    authors: CynologySources.authors(
+                        "Stephen Zawistowski, Pamela Reid"
+                    ),
+                    date: CynologySources.published(
+                        "2016"
+                    ),
+                    container: ReferenceContainer(
+                        kind: .book,
+                        title: "The Domestic Dog: Its Evolution, Behavior and Interactions with People",
+                        publisher: "Cambridge University Press",
+                        pages: "227-244",
+                        edition: "Second edition"
+                    ),
+                    doi: "10.1017/9781139161800.012",
+                    kind: .book_chapter,
+                    channel: .scholarly,
+                    tags: facets
+                )
+
             case .herding_dog_training_interactivity:
                 return CynologySources.entry(
                     title: "Teaching the Dog and Learning from the Dog: Interactivity in Herding Dog Training and Use",
@@ -1596,6 +1622,14 @@ public extension CynologySources {
                     .human_dog_relationship,
                     .communication,
                     .training_methods
+                )
+
+            case .dogs_today_society_applied_animal_behavior:
+                return .cynology(
+                    .human_dog_relationship,
+                    .canine_behavior,
+                    .training_methods,
+                    .welfare
                 )
 
             case .herding_dog_training_interactivity:
