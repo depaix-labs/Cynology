@@ -143,6 +143,16 @@ public extension CynologySources {
         case shelter_assessments_post_adoption
         case owner_animal_factors_problem_behaviors
 
+        // MARK: - RecentAABSProblemWelfare
+
+        case canine_qol_public_private_veterinary_care
+        case excessive_energy_caregiver_fear_anxiety
+        case border_collie_lunging_associated_factors
+        case reactive_aggressive_caregiver_fear_anxiety
+        case environmental_enrichment_bearded_dragons
+        case household_interdog_aggression_bite_wounds
+        case adapted_qba_fear_frustration_facial_expressions
+
         // MARK: - CanineDiet
 
         // old: CynologyNutritionSource.knight_vegan_versus_meat_based_dog_food_guardian_reported_health
@@ -4293,6 +4303,167 @@ public extension CynologySources {
                     channel: .peer_reviewed,
                     tags: facets
                 )
+
+            case .canine_qol_public_private_veterinary_care:
+                return CynologySources.entry(
+                    title: "Owners’ perceptions of canine quality of life across public and private veterinary care",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106898"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jorge Adrián Madera-García, Anahí Maldonado-Cabrera, Guadalupe López-Robles, Reyna Fabiola Osuna-Chávez, Ricardo Zamorano-Algandar, Blayra Maldonado-Cabrera"
+                    ),
+                    date: CynologySources.published(
+                        "2026-03"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "296",
+                        pages: "106898"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106898",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .excessive_energy_caregiver_fear_anxiety:
+                return CynologySources.entry(
+                    title: "Excessive energy in dogs: The impact of caregiver-related variables and fear/anxiety",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106900"
+                    ),
+                    authors: CynologySources.authors(
+                        "Maria Toscano Batista, Catarina Lavrador, Gonçalo da Graça-Pereira"
+                    ),
+                    date: CynologySources.published(
+                        "2026-03"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "296",
+                        pages: "106900"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106900",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .border_collie_lunging_associated_factors:
+                return CynologySources.entry(
+                    title: "Born to lunge? A survey on lunging behaviour and associated factors in Border Collies",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106894"
+                    ),
+                    authors: CynologySources.authors(
+                        "Britt Marin, Sofie Salden, Bart Broeckx, Wim Van Den Broeck, Anouck Haverbeke"
+                    ),
+                    date: CynologySources.published(
+                        "2026-03"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "296",
+                        pages: "106894"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106894",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .reactive_aggressive_caregiver_fear_anxiety:
+                return CynologySources.entry(
+                    title: "When dogs react: The role of caregiver factors and fear/anxiety in reactive and aggressive manifestations",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106840"
+                    ),
+                    authors: CynologySources.authors(
+                        "Maria Toscano Batista, Catarina Lavrador, Gonçalo da Graça-Pereira"
+                    ),
+                    date: CynologySources.published(
+                        "2025-12"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "293",
+                        pages: "106840"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106840",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .environmental_enrichment_bearded_dragons:
+                return CynologySources.entry(
+                    title: "Does environmental enrichment impact the behaviour and welfare of bearded dragons (Pogona vitticeps)?",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106751"
+                    ),
+                    authors: CynologySources.authors(
+                        "Agnese Crisante, Anna Wilkinson, Thomas W. Pike, Erin L. Rickman, Oliver H. P. Burman"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106751"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106751",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .household_interdog_aggression_bite_wounds:
+                return CynologySources.entry(
+                    title: "Household hostilities: A descriptive study of inter-dog aggression requiring veterinary treatment of dog bite wounds in Pretoria, South Africa",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106819"
+                    ),
+                    authors: CynologySources.authors(
+                        "Josef Hanekom, Peter N. Thompson, Johan P. Schoeman, Elize van Vollenhoven"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106819"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106819",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .adapted_qba_fear_frustration_facial_expressions:
+                return CynologySources.entry(
+                    title: "An adapted Qualitative Behavioural Assessment of dogs’ facial expressions of fear and frustration",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106828"
+                    ),
+                    authors: CynologySources.authors(
+                        "Beverley M. Wilson, Catia Correia-Caeiro, Daniel S. Mills"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106828"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106828",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
             }
         }
 
@@ -4828,6 +4999,64 @@ public extension CynologySources {
                     .frustration_tolerance,
                     .impulsivity,
                     .assessment
+                )
+
+            case .canine_qol_public_private_veterinary_care:
+                return .cynology(
+                    .welfare,
+                    .assessment,
+                    .human_dog_relationship
+                )
+
+            case .excessive_energy_caregiver_fear_anxiety:
+                return .cynology(
+                    .clinical_behavior,
+                    .problem_behavior,
+                    .anxiety,
+                    .welfare,
+                    .human_dog_relationship
+                )
+
+            case .border_collie_lunging_associated_factors:
+                return .cynology(
+                    .problem_behavior,
+                    .reactivity,
+                    .impulsivity,
+                    .welfare,
+                    .assessment
+                )
+
+            case .reactive_aggressive_caregiver_fear_anxiety:
+                return .cynology(
+                    .clinical_behavior,
+                    .reactivity,
+                    .aggression,
+                    .anxiety,
+                    .human_dog_relationship
+                )
+
+            case .environmental_enrichment_bearded_dragons:
+                return .cynology(
+                    .welfare,
+                    .enrichment,
+                    .affective_state
+                )
+
+            case .household_interdog_aggression_bite_wounds:
+                return .cynology(
+                    .aggression,
+                    .problem_behavior,
+                    .clinical_behavior,
+                    .assessment
+                )
+
+            case .adapted_qba_fear_frustration_facial_expressions:
+                return .cynology(
+                    .affective_state,
+                    .frustration_tolerance,
+                    .anxiety,
+                    .assessment,
+                    .canine_body_language
                 )
             }
         }

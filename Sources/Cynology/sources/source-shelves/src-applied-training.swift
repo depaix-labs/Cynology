@@ -136,6 +136,13 @@ public extension CynologySources {
 
         case spatial_discounting_impulsivity
 
+        // MARK: - RecentAABSAssessmentAndIntervention
+
+        case beyond_impulsivity_inhibitory_control_measures
+        case french_cbarq_factorial_structure
+        case fido_commercial_breeding_kennels
+        case shelter_rehab_onset_fear
+
         // MARK: - WorkingDogs
 
         // old: CynologyWorkingDogSource.hall_johnston_bray_otto_maclean_udell_working_dog_training_twenty_first_century
@@ -951,6 +958,98 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .beyond_impulsivity_inhibitory_control_measures:
+                return CynologySources.entry(
+                    title: "Beyond impulsivity: Exploring mechanisms that may influence inhibitory control measures",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.107098"
+                    ),
+                    authors: CynologySources.authors(
+                        "Lane I. Montgomery, Courtney Collins-Pisano, Jordan G. Smith, Sarah Krichbaum"
+                    ),
+                    date: CynologySources.published(
+                        "2026"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "303",
+                        pages: "107098"
+                    ),
+                    doi: "10.1016/j.applanim.2026.107098",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .french_cbarq_factorial_structure:
+                return CynologySources.entry(
+                    title: "Evaluation of the factorial structures of the canine behavioral assessment and research questionnaire (C-BARQ) in France",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106816"
+                    ),
+                    authors: CynologySources.authors(
+                        "Audrey Besegher, Nancy Rebout, Dalila Bovet, Sarah Jeannin, Thierry Bedossa, James A. Serpell, Sara Hoummady"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106816"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106816",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .fido_commercial_breeding_kennels:
+                return CynologySources.entry(
+                    title: "Advancing canine welfare assessment in kennels: evaluating the validity of Field Instantaneous Dog Observation (FIDO) scoring in commercial breeding kennels",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106770"
+                    ),
+                    authors: CynologySources.authors(
+                        "Lynda Mugenda, Traci Shreyer, Candace Croney"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106770"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106770",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .shelter_rehab_onset_fear:
+                return CynologySources.entry(
+                    title: "The impact of delaying behavior rehabilitation onset on fear and outcome measures in dogs in a shelter setting",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106743"
+                    ),
+                    authors: CynologySources.authors(
+                        "Kristen Collins, Katherine Miller, Bailey H. Eagan, Emily Patterson-Kane, Tristan Rehner-Fleurant, Victoria Cussen, Pamela Reid"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106743"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106743",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .working_dog_training_twenty_first_century:
                 return CynologySources.entry(
                     title: "Working Dog Training for the Twenty-First Century",
@@ -1293,6 +1392,39 @@ public extension CynologySources {
                     .physiology,
                     .assessment,
                     .stress
+                )
+
+            case .beyond_impulsivity_inhibitory_control_measures:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .temperament,
+                    .impulsivity,
+                    .motivation
+                )
+
+            case .french_cbarq_factorial_structure:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .temperament,
+                    .canine_behavior
+                )
+
+            case .fido_commercial_breeding_kennels:
+                return .cynology(
+                    .methodology,
+                    .assessment,
+                    .welfare,
+                    .anxiety
+                )
+
+            case .shelter_rehab_onset_fear:
+                return .cynology(
+                    .behavior_modification,
+                    .welfare,
+                    .anxiety,
+                    .clinical_behavior
                 )
 
             case .animal_welfare_science_working_dogs:

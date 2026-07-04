@@ -188,6 +188,12 @@ public extension CynologySources {
         case herding_dog_training_interactivity
 
         case trainability_proxy_attachment_construct_validity
+        case aai_dog_handler_dyad_personality_relationship
+
+        // MARK: - RecentAABSDevelopmentCommunication
+
+        case human_attentional_state_eye_status
+        case gestational_enrichment_offspring_behaviour
 
         // MARK: - AdditionalDogBooks
 
@@ -1401,6 +1407,75 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .aai_dog_handler_dyad_personality_relationship:
+                return CynologySources.entry(
+                    title: "Personalities and relationship of the dog-handler dyad in animal assisted interventions: An exploratory correlational study",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2026.107056"
+                    ),
+                    authors: CynologySources.authors(
+                        "Marta De Santis, Luca Martelli, Alberto Mair, Diletta Fornasiero, Lorena Filugelli, Emma Bassan, Margherita Soncin, Franco Mutinelli, Laura Contalbrigo"
+                    ),
+                    date: CynologySources.published(
+                        "2026"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "302",
+                        pages: "107056"
+                    ),
+                    doi: "10.1016/j.applanim.2026.107056",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .human_attentional_state_eye_status:
+                return CynologySources.entry(
+                    title: "Ontogeny of dogs’ sensitivity to the human’s attentional state: Do the eyes have it?",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106778"
+                    ),
+                    authors: CynologySources.authors(
+                        "Karen Lockey-Kennedy, Amy West-Brownbill, Juliane Kaminski"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106778"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106778",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .gestational_enrichment_offspring_behaviour:
+                return CynologySources.entry(
+                    title: "Gestational enrichment of commercial breeding dams (Canis familiaris) influences offspring behaviour",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2025.106779"
+                    ),
+                    authors: CynologySources.authors(
+                        "Uri Baqueiro-Espinosa, Victoria McEvoy, Paul Donnelly, Gareth Arnott"
+                    ),
+                    date: CynologySources.published(
+                        "2025-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "292",
+                        pages: "106779"
+                    ),
+                    doi: "10.1016/j.applanim.2025.106779",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .canine_anatomy_and_physiology:
                 return CynologySources.entry(
                     title: "Canine Anatomy and Physiology: A Practical Approach",
@@ -1645,6 +1720,31 @@ public extension CynologySources {
                     .human_dog_relationship,
                     .assessment,
                     .methodology,
+                    .canine_behavior
+                )
+
+            case .aai_dog_handler_dyad_personality_relationship:
+                return .cynology(
+                    .human_dog_relationship,
+                    .assessment,
+                    .methodology,
+                    .temperament,
+                    .canine_behavior
+                )
+
+            case .human_attentional_state_eye_status:
+                return .cynology(
+                    .communication,
+                    .human_dog_relationship,
+                    .canine_behavior,
+                    .methodology
+                )
+
+            case .gestational_enrichment_offspring_behaviour:
+                return .cynology(
+                    .socialization,
+                    .enrichment,
+                    .welfare,
                     .canine_behavior
                 )
 
