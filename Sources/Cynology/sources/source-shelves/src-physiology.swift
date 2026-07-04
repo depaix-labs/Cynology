@@ -328,6 +328,8 @@ public extension CynologySources {
         case bva_bsava_electronic_training_aids_consultation_response
         case victoria_prevention_cruelty_animals_electronic_collars
 
+        case electronic_training_collar_characteristics
+
         // MARK: - DemandCapabilityStress
 
         // old: CynologyWelfareSource.xie_johns_job_scope_stress_too_high
@@ -2427,6 +2429,30 @@ public extension CynologySources {
                     ),
                     kind: .report,
                     channel: .institutional,
+                    tags: facets
+                )
+
+            case .electronic_training_collar_characteristics:
+                return CynologySources.entry(
+                    title: "Characteristics of Electronic Training Collars for Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1136/vr.101144"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jeffrey A. Lines, Katja van Driel, Jonathan J. Cooper"
+                    ),
+                    date: CynologySources.published(
+                        "2013-03-16"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Veterinary Record",
+                        volume: "172",
+                        issue: "11",
+                        pages: "288"
+                    ),
+                    doi: "10.1136/vr.101144",
+                    kind: .article,
+                    channel: .peer_reviewed,
                     tags: facets
                 )
 
@@ -4809,6 +4835,15 @@ public extension CynologySources {
                 return .cynology(
                     .electronic_training_devices,
                     .aversives,
+                    .welfare
+                )
+
+            case .electronic_training_collar_characteristics:
+                return .cynology(
+                    .electronic_training_devices,
+                    .aversives,
+                    .technical,
+                    .methodology,
                     .welfare
                 )
 
