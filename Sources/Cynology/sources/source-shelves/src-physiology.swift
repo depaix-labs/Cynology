@@ -532,6 +532,7 @@ public extension CynologySources {
 
         // old: CynologyWelfareSource.harding_paul_mendl_cognitive_bias_affective_state
         case cognitive_bias_affective_state
+        case human_stress_odour_cognitive_bias
 
         // old: CynologyWelfareSource.mendl_burman_paul_integrative_framework_animal_emotion_mood
         case animal_emotion_mood
@@ -3982,6 +3983,30 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .human_stress_odour_cognitive_bias:
+                return CynologySources.entry(
+                    title: "The odour of an unfamiliar stressed or relaxed person affects dogs’ responses to a cognitive bias test",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-024-66147-1"
+                    ),
+                    authors: CynologySources.authors(
+                        "Zoe Parr-Cortes, Carsten T. Müller, Laszlo Talas, Michael T. Mendl, Claire Guest, Nicola J. Rooney"
+                    ),
+                    date: CynologySources.published(
+                        "2024-07-22"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Scientific Reports",
+                        volume: "14",
+                        issue: "1",
+                        pages: "15843"
+                    ),
+                    doi: "10.1038/s41598-024-66147-1",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .animal_emotion_mood:
                 return CynologySources.entry(
                     title: "An Integrative and Functional Framework for the Study of Animal Emotion and Mood",
@@ -4752,6 +4777,15 @@ public extension CynologySources {
                     .affective_state,
                     .welfare,
                     .physiology
+                )
+
+            case .human_stress_odour_cognitive_bias:
+                return .cynology(
+                    .affective_state,
+                    .stress,
+                    .welfare,
+                    .human_dog_relationship,
+                    .assessment
                 )
 
             case .defensive_behavior_system,
