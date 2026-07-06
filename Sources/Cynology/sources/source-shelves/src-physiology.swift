@@ -35,6 +35,8 @@ public extension CynologySources {
         // old: CynologyClinicalSource.batista_lavrador_da_graca_pereira_predictors_fear_anxiety_companion_dogs
         case predictors_fear_anxiety
 
+        case owner_reported_fear_anxiety_prevalence
+
         // old: CynologyClinicalSource.riemer_effectiveness_treatments_firework_fears_dogs
         case firework_fear_treatments
         case firework_aversion_dutch_owners
@@ -83,6 +85,11 @@ public extension CynologySources {
         case acute_emotional_state_indicators
         case emotional_arousal_physical_health
         case saliva_sampling_stress_procedures
+
+        case dog_multimodal_fmri_learning
+        case canine_fmri_praise_food_preference
+        case anxious_dogs_structural_connectome
+        case domestic_dog_positive_emotion_assessment
 
         // MARK: - AggressionRisk
 
@@ -285,6 +292,8 @@ public extension CynologySources {
 
         // old: CynologyWelfareSource.christiansen_bakken_braastad_second_year_sheep_aversion_conditioning
         case second_year_sheep_aversion
+
+        case electronic_shock_collars_risks
 
         // old: CynologyWelfareSource.schilder_van_der_borg_shock_collar_short_long_term_effects
         case shock_collar_effects
@@ -558,6 +567,19 @@ public extension CynologySources {
         // old: CynologyWelfareSource.niermann_figner_roelofs_defensive_stress_responses
         case defensive_stress_responses
 
+        case emotion_circuits_brain
+        case emotional_brain_fear_amygdala
+        case amygdala_emotion_processing
+        case amygdala_memory_consolidation_emotional_arousal
+
+        // MARK: - PlayAffectAndSocialBuffering
+
+        case animal_play_welfare
+        case juvenile_rat_fear_risk_playfulness
+        case prepubertal_social_experience_predator_odors
+        case rough_tumble_play_resilience_stress
+        case social_buffering_oxytocin_amygdala
+
         // MARK: - MotivationalStates
 
         // old: CynologyWelfareSource.amsel_frustration_theory_dispositional_learning_memory
@@ -777,6 +799,29 @@ public extension CynologySources {
                         "2026-05-01"
                     ),
                     doi: "10.1016/j.jveb.2026.02.003",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .owner_reported_fear_anxiety_prevalence:
+                return CynologySources.entry(
+                    title: "Owner-Reported Prevalence and Severity of Fear and Anxiety in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1007/s11259-026-11227-y"
+                    ),
+                    authors: CynologySources.authors(
+                        "Bonnie V. Beaver"
+                    ),
+                    date: CynologySources.published(
+                        "2026-04-25"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Veterinary Research Communications",
+                        volume: "50",
+                        pages: "284"
+                    ),
+                    doi: "10.1007/s11259-026-11227-y",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1142,6 +1187,99 @@ public extension CynologySources {
                         "2026"
                     ),
                     doi: "10.1016/j.applanim.2025.106868",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .dog_multimodal_fmri_learning:
+                return CynologySources.entry(
+                    title: "Fast Neural Learning in Dogs: A Multimodal Sensory fMRI Study",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-018-32990-2"
+                    ),
+                    authors: CynologySources.authors(
+                        "Ashley Prichard, Raveena Chhibber, Kate Athanassiades, Mark Spivak, Gregory S. Berns"
+                    ),
+                    date: CynologySources.published(
+                        "2018-10-02"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Scientific Reports",
+                        volume: "8",
+                        pages: "14614"
+                    ),
+                    doi: "10.1038/s41598-018-32990-2",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .canine_fmri_praise_food_preference:
+                return CynologySources.entry(
+                    title: "Awake Canine fMRI Predicts Dogs’ Preference for Praise vs Food",
+                    location: CynologySources.doi_location(
+                        "10.1093/scan/nsw102"
+                    ),
+                    authors: CynologySources.authors(
+                        "Peter F. Cook, Ashley Prichard, Mark Spivak, Gregory S. Berns"
+                    ),
+                    date: CynologySources.published(
+                        "2016"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Social Cognitive and Affective Neuroscience",
+                        volume: "11",
+                        issue: "12",
+                        pages: "1853-1862"
+                    ),
+                    doi: "10.1093/scan/nsw102",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .anxious_dogs_structural_connectome:
+                return CynologySources.entry(
+                    title: "Structural Connectome Alterations in Anxious Dogs: A DTI-Based Study",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41598-023-37121-0"
+                    ),
+                    authors: CynologySources.authors(
+                        "Qinyuan Chen, Yangfeng Xu, Emma Christiaen, Guo-Rong Wu, Sara De Witte, Christian Vanhove, Jimmy Saunders, Kathelijne Peremans, Chris Baeken"
+                    ),
+                    date: CynologySources.published(
+                        "2023-06-19"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Scientific Reports",
+                        volume: "13",
+                        pages: "9946"
+                    ),
+                    doi: "10.1038/s41598-023-37121-0",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .domestic_dog_positive_emotion_assessment:
+                return CynologySources.entry(
+                    title: "Where Do We Stand in the Domestic Dog (Canis familiaris) Positive-Emotion Assessment: A State-of-the-Art Review and Future Directions",
+                    location: CynologySources.doi_location(
+                        "10.3389/fpsyg.2020.02131"
+                    ),
+                    authors: CynologySources.authors(
+                        "Erika Csoltova, Emira Mehinagic"
+                    ),
+                    date: CynologySources.published(
+                        "2020-09-08"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Frontiers in Psychology",
+                        volume: "11",
+                        pages: "2131"
+                    ),
+                    doi: "10.3389/fpsyg.2020.02131",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -2292,6 +2430,37 @@ public extension CynologySources {
                     doi: "10.1016/S0168-1591(00)00203-3",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .electronic_shock_collars_risks:
+                return CynologySources.entry(
+                    title: "Electronic Shock Collars: Are They Worth the Risks?",
+                    location: CynologySources.web_location(
+                        "https://www.dogexpert.com/wp-content/uploads/2012/05/Electroinic-collars.pdf"
+                    ),
+                    authors: CynologySources.authors(
+                        "Richard H. Polsky"
+                    ),
+                    date: CynologySources.published(
+                        "1994"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of the American Animal Hospital Association",
+                        volume: "30",
+                        issue: "5",
+                        pages: "463-468"
+                    ),
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    relations: [
+                        ReferenceRelation.sameWork(
+                            title: "DogExpert HTML metadata page",
+                            location: CynologySources.web_location(
+                                "https://www.dogexpert.com/peer-reviewed-publication-html/"
+                            )
+                        )
+                    ],
                     tags: facets
                 )
 
@@ -4115,6 +4284,173 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .emotion_circuits_brain:
+                return CynologySources.entry(
+                    title: "Emotion Circuits in the Brain",
+                    location: CynologySources.doi_location(
+                        "10.1146/annurev.neuro.23.1.155"
+                    ),
+                    authors: CynologySources.authors(
+                        "Joseph E. LeDoux"
+                    ),
+                    date: CynologySources.published(
+                        "2000"
+                    ),
+                    doi: "10.1146/annurev.neuro.23.1.155",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .emotional_brain_fear_amygdala:
+                return CynologySources.entry(
+                    title: "The Emotional Brain, Fear, and the Amygdala",
+                    location: CynologySources.doi_location(
+                        "10.1023/A:1025048802629"
+                    ),
+                    authors: CynologySources.authors(
+                        "Joseph E. LeDoux"
+                    ),
+                    date: CynologySources.published(
+                        "2003-10"
+                    ),
+                    doi: "10.1023/A:1025048802629",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .amygdala_emotion_processing:
+                return CynologySources.entry(
+                    title: "Contributions of the Amygdala to Emotion Processing: From Animal Models to Human Behavior",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.neuron.2005.09.025"
+                    ),
+                    authors: CynologySources.authors(
+                        "Elizabeth A. Phelps, Joseph E. LeDoux"
+                    ),
+                    date: CynologySources.published(
+                        "2005-10-20"
+                    ),
+                    doi: "10.1016/j.neuron.2005.09.025",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .amygdala_memory_consolidation_emotional_arousal:
+                return CynologySources.entry(
+                    title: "The Amygdala Modulates the Consolidation of Memories of Emotionally Arousing Experiences",
+                    location: CynologySources.doi_location(
+                        "10.1146/annurev.neuro.27.070203.144157"
+                    ),
+                    authors: CynologySources.authors(
+                        "James L. McGaugh"
+                    ),
+                    date: CynologySources.published(
+                        "2004"
+                    ),
+                    doi: "10.1146/annurev.neuro.27.070203.144157",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .animal_play_welfare:
+                return CynologySources.entry(
+                    title: "Animal Play and Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.anbehav.2011.01.007"
+                    ),
+                    authors: CynologySources.authors(
+                        "Suzanne D. E. Held, Marek Špinka"
+                    ),
+                    date: CynologySources.published(
+                        "2011-05"
+                    ),
+                    doi: "10.1016/j.anbehav.2011.01.007",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .juvenile_rat_fear_risk_playfulness:
+                return CynologySources.entry(
+                    title: "Fear, Risk Assessment, and Playfulness in the Juvenile Rat",
+                    location: CynologySources.doi_location(
+                        "10.1037/0735-7044.120.1.49"
+                    ),
+                    authors: CynologySources.authors(
+                        "Stephen M. Siviy, Kelly A. Harrison, Ian S. McGregor"
+                    ),
+                    date: CynologySources.published(
+                        "2006-02"
+                    ),
+                    doi: "10.1037/0735-7044.120.1.49",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .prepubertal_social_experience_predator_odors:
+                return CynologySources.entry(
+                    title: "Effects of Pre-Pubertal Social Experiences on the Responsiveness of Juvenile Rats to Predator Odors",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.neubiorev.2008.05.004"
+                    ),
+                    authors: CynologySources.authors(
+                        "Stephen M. Siviy"
+                    ),
+                    date: CynologySources.published(
+                        "2008-09"
+                    ),
+                    doi: "10.1016/j.neubiorev.2008.05.004",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .rough_tumble_play_resilience_stress:
+                return CynologySources.entry(
+                    title: "Rough-and-Tumble Play Induces Resilience to Stress in Rats",
+                    location: CynologySources.doi_location(
+                        "10.1097/WNR.0000000000000864"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jeffrey Burgdorf, Roger A. Kroes, Joseph R. Moskal"
+                    ),
+                    date: CynologySources.published(
+                        "2017-12-06"
+                    ),
+                    doi: "10.1097/WNR.0000000000000864",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .social_buffering_oxytocin_amygdala:
+                return CynologySources.entry(
+                    title: "Social Buffering in Rats Reduces Fear by Oxytocin Triggering Sustained Changes in Central Amygdala Neuronal Activity",
+                    location: CynologySources.doi_location(
+                        "10.1038/s41467-024-45626-z"
+                    ),
+                    authors: CynologySources.authors(
+                        "Chloe Hegoburu, Yan Tang, Ruifang Niu, Supriya Ghosh, Rodrigo Triana Del Rio, Isabel de Araujo Salgado, Marios Abatis, David Alexandre Mota Caseiro, Erwin H. van den Burg, Christophe Grundschober, Ron Stoop"
+                    ),
+                    date: CynologySources.published(
+                        "2024-03-07"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Nature Communications",
+                        volume: "15",
+                        pages: "2081"
+                    ),
+                    doi: "10.1038/s41467-024-45626-z",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .frustration_theory:
                 return CynologySources.entry(
                     title: "Frustration Theory: An Analysis of Dispositional Learning and Memory",
@@ -4519,7 +4855,8 @@ public extension CynologySources {
                 )
 
             case .diazepam_anxiety_related_behavior,
-                 .predictors_fear_anxiety:
+                 .predictors_fear_anxiety,
+                 .owner_reported_fear_anxiety_prevalence:
                 return .cynology(
                     .clinical_behavior,
                     .anxiety,
@@ -4592,6 +4929,18 @@ public extension CynologySources {
                     .assessment,
                     .methodology,
                     .welfare
+                )
+
+            case .dog_multimodal_fmri_learning,
+                 .canine_fmri_praise_food_preference,
+                 .anxious_dogs_structural_connectome,
+                 .domestic_dog_positive_emotion_assessment:
+                return .cynology(
+                    .affective_state,
+                    .physiology,
+                    .assessment,
+                    .welfare,
+                    .canine_behavior
                 )
 
             case .puppy_problem_clusters_emotional_commonalities:
@@ -4813,6 +5162,7 @@ public extension CynologySources {
 
             case .hunting_dogs_confronted_with_sheep,
                  .second_year_sheep_aversion,
+                 .electronic_shock_collars_risks,
                  .shock_collar_effects,
                  .electronic_collar_pinch_quitting_signal,
                  .electronic_collars_prevalence_success,
@@ -4835,6 +5185,7 @@ public extension CynologySources {
                 return .cynology(
                     .electronic_training_devices,
                     .aversives,
+                    .training_methods,
                     .welfare
                 )
 
@@ -4992,6 +5343,31 @@ public extension CynologySources {
                     .welfare,
                     .human_dog_relationship,
                     .assessment
+                )
+
+            case .emotion_circuits_brain,
+                 .emotional_brain_fear_amygdala,
+                 .amygdala_emotion_processing,
+                 .amygdala_memory_consolidation_emotional_arousal:
+                return .cynology(
+                    .affective_state,
+                    .physiology,
+                    .learning_theory,
+                    .classical_conditioning
+                )
+
+            case .animal_play_welfare,
+                 .juvenile_rat_fear_risk_playfulness,
+                 .prepubertal_social_experience_predator_odors,
+                 .rough_tumble_play_resilience_stress,
+                 .social_buffering_oxytocin_amygdala:
+                return .cynology(
+                    .play,
+                    .affective_state,
+                    .stress,
+                    .resilience,
+                    .welfare,
+                    .physiology
                 )
 
             case .defensive_behavior_system,

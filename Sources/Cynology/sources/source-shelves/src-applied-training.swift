@@ -75,6 +75,7 @@ public extension CynologySources {
 
         // old: CynologyTrainingSource.shnookal_tepper_howell_bennett_counterconditioning_systematic_review
         case counterconditioning_interventions_review
+        case problem_solving_games_fear_strangers
 
         // old: CynologyTrainingSource.dinwoodie_zottola_dodman_professionals_behavior_modification_medication_aggression
         case behavior_modification_medication_aggression
@@ -617,6 +618,24 @@ public extension CynologySources {
                     doi: "10.1016/j.applanim.2024.106305",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .problem_solving_games_fear_strangers:
+                return CynologySources.entry(
+                    title: "Problem Solving Games as a Tool to Reduce Fear of Strangers in Dogs",
+                    location: CynologySources.doi_location(
+                        "10.4454/db.v2i1.25"
+                    ),
+                    authors: CynologySources.authors(
+                        "Marcella Zilocchi, Beatrice Carlone"
+                    ),
+                    date: CynologySources.published(
+                        "2016"
+                    ),
+                    doi: "10.4454/db.v2i1.25",
+                    kind: .article,
+                    channel: .scholarly,
                     tags: facets
                 )
 
@@ -1309,6 +1328,15 @@ public extension CynologySources {
                     .reinforcement,
                     .training_methods,
                     .affective_state,
+                    .welfare
+                )
+
+            case .problem_solving_games_fear_strangers:
+                return .cynology(
+                    .behavior_modification,
+                    .clinical_behavior,
+                    .anxiety,
+                    .play,
                     .welfare
                 )
 

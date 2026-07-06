@@ -26,6 +26,16 @@ public extension CynologySources {
         // old: CynologyLearningSource.rescorla_pavlovian_conditioning_not_what_you_think
         case pavlovian_conditioning_not_what_you_think
 
+        // MARK: - EmotionalLearningAndCounterconditioning
+
+        case behavioral_neural_counterconditioning
+        case shock_water_counterconditioning_rabbits
+        case appetitive_aversive_fear_conditioning
+        case amygdala_ventral_striatum_long_term_fear
+        case appetitive_pavlovian_instrumental_transfer_review
+        case emotion_motivation_amygdala_striatum_pfc
+        case aversive_pavlovian_control_instrumental_behavior
+
         // MARK: - OperantConditioningFoundations
 
         // old: CynologyLearningSource.ramirez_choosing_right_method_reinforcement_vs_punishment
@@ -177,6 +187,8 @@ public extension CynologySources {
         // old: CynologyLearningSource.trask_bouton_retrieval_practice_multiple_context_changes_instrumental_behavior
         case retrieval_practice_context_changes
 
+        case context_behavioral_processes_extinction
+
         // MARK: - AdditionalDogBooks
 
         // old: CynologyLearningSource.bouton_learning_and_behavior_contemporary_synthesis
@@ -305,6 +317,132 @@ public extension CynologySources {
                         "1978"
                     ),
                     doi: "10.1016/0023-9690(78)90010-3",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .behavioral_neural_counterconditioning:
+                return CynologySources.entry(
+                    title: "Behavioral and Neural Processes in Counterconditioning: Past and Future Directions",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.brat.2019.103532"
+                    ),
+                    authors: CynologySources.authors(
+                        "Nicole E. Keller, Augustin C. Hennings, Joseph E. Dunsmoor"
+                    ),
+                    date: CynologySources.published(
+                        "2020-02"
+                    ),
+                    doi: "10.1016/j.brat.2019.103532",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .shock_water_counterconditioning_rabbits:
+                return CynologySources.entry(
+                    title: "Counterconditioning of Shock by a Water Reinforcer in Rabbits",
+                    location: CynologySources.doi_location(
+                        "10.3758/BF03209685"
+                    ),
+                    authors: CynologySources.authors(
+                        "Michael F. Dearing, Anthony Dickinson"
+                    ),
+                    date: CynologySources.published(
+                        "1979-09"
+                    ),
+                    doi: "10.3758/BF03209685",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .appetitive_aversive_fear_conditioning:
+                return CynologySources.entry(
+                    title: "Appetitive-Aversive Interactions in Pavlovian Fear Conditioning",
+                    location: CynologySources.doi_location(
+                        "10.1037/a0028341"
+                    ),
+                    authors: CynologySources.authors(
+                        "Helen M. Nasser, Gavan P. McNally"
+                    ),
+                    date: CynologySources.published(
+                        "2012-06"
+                    ),
+                    doi: "10.1037/a0028341",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .amygdala_ventral_striatum_long_term_fear:
+                return CynologySources.entry(
+                    title: "Amygdala-Ventral Striatum Circuit Activation Decreases Long-Term Fear",
+                    location: CynologySources.doi_location(
+                        "10.7554/eLife.12669"
+                    ),
+                    authors: CynologySources.authors(
+                        "Susana S. Correia, Anna G. McGrath, Allison Lee, Ann M. Graybiel, Ki A. Goosens"
+                    ),
+                    date: CynologySources.published(
+                        "2016-09-27"
+                    ),
+                    doi: "10.7554/eLife.12669",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .appetitive_pavlovian_instrumental_transfer_review:
+                return CynologySources.entry(
+                    title: "Appetitive Pavlovian-Instrumental Transfer: A Review",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.neubiorev.2016.09.020"
+                    ),
+                    authors: CynologySources.authors(
+                        "Emiliano Cartoni, Bernard Balleine, Gianluca Baldassarre"
+                    ),
+                    date: CynologySources.published(
+                        "2016-12"
+                    ),
+                    doi: "10.1016/j.neubiorev.2016.09.020",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .emotion_motivation_amygdala_striatum_pfc:
+                return CynologySources.entry(
+                    title: "Emotion and Motivation: The Role of the Amygdala, Ventral Striatum, and Prefrontal Cortex",
+                    location: CynologySources.doi_location(
+                        "10.1016/S0149-7634(02)00007-6"
+                    ),
+                    authors: CynologySources.authors(
+                        "Rudolf N. Cardinal, John A. Parkinson, Jeremy Hall, Barry J. Everitt"
+                    ),
+                    date: CynologySources.published(
+                        "2002"
+                    ),
+                    doi: "10.1016/S0149-7634(02)00007-6",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .aversive_pavlovian_control_instrumental_behavior:
+                return CynologySources.entry(
+                    title: "Aversive Pavlovian Control of Instrumental Behavior in Humans",
+                    location: CynologySources.doi_location(
+                        "10.1162/jocn_a_00425"
+                    ),
+                    authors: CynologySources.authors(
+                        "Demi E. M. Geurts, Quentin J. M. Huys, Hanneke E. M. den Ouden, Roshan Cools"
+                    ),
+                    date: CynologySources.published(
+                        "2013-09"
+                    ),
+                    doi: "10.1162/jocn_a_00425",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1497,6 +1635,24 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .context_behavioral_processes_extinction:
+                return CynologySources.entry(
+                    title: "Context and Behavioral Processes in Extinction",
+                    location: CynologySources.doi_location(
+                        "10.1101/lm.78804"
+                    ),
+                    authors: CynologySources.authors(
+                        "Mark E. Bouton"
+                    ),
+                    date: CynologySources.published(
+                        "2004"
+                    ),
+                    doi: "10.1101/lm.78804",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
             case .learning_and_behavior:
                 return CynologySources.entry(
                     title: "Learning and Behavior: A Contemporary Synthesis",
@@ -1549,6 +1705,28 @@ public extension CynologySources {
                 return .cynology(
                     .learning_theory,
                     .classical_conditioning
+                )
+
+            case .behavioral_neural_counterconditioning,
+                 .shock_water_counterconditioning_rabbits,
+                 .appetitive_aversive_fear_conditioning,
+                 .amygdala_ventral_striatum_long_term_fear:
+                return .cynology(
+                    .learning_theory,
+                    .classical_conditioning,
+                    .affective_state,
+                    .extinction
+                )
+
+            case .appetitive_pavlovian_instrumental_transfer_review,
+                 .emotion_motivation_amygdala_striatum_pfc,
+                 .aversive_pavlovian_control_instrumental_behavior:
+                return .cynology(
+                    .learning_theory,
+                    .classical_conditioning,
+                    .operant_conditioning,
+                    .motivation,
+                    .affective_state
                 )
 
             case .choosing_the_right_method,
@@ -1716,6 +1894,14 @@ public extension CynologySources {
                 return .cynology(
                     .learning_theory,
                     .context_renewal
+                )
+
+            case .context_behavioral_processes_extinction:
+                return .cynology(
+                    .learning_theory,
+                    .extinction,
+                    .context_renewal,
+                    .classical_conditioning
                 )
 
             case .learning_and_behavior,
