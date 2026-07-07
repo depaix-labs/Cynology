@@ -3818,15 +3818,15 @@ public extension CynologySources {
                 return CynologySources.entry(
                     title: "Effects of Early Gentling and Early Environment on Emotional Development of Puppies",
                     location: CynologySources.doi_location(
-                        "10.1016/j.applanim.2008.12.007"
+                        "10.1016/j.applanim.2007.05.007"
                     ),
                     authors: CynologySources.authors(
-                        "Angelo Gazzano, Chiara Mariti, Lorella Notari, Claudio Sighieri, E. Anne McBride"
+                        "Angelo Gazzano, Chiara Mariti, Lorella Notari, Claudio Sighieri, Elizabeth Anne McBride"
                     ),
                     date: CynologySources.published(
-                        "2008"
+                        "2008-04"
                     ),
-                    doi: "10.1016/j.applanim.2008.12.007",
+                    doi: "10.1016/j.applanim.2007.05.007",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
