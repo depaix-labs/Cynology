@@ -53,6 +53,8 @@ public extension CynologySources {
         // old: CynologyLearningSource.sorgendal_boks_challenging_interfaces_operant_conditioning_interaction_designer
         case operant_conditioning_for_interaction_designers
 
+        case negative_effects_positive_reinforcement
+
         // MARK: - MatchingLaw
 
         // old: CynologyLearningSource.herrnstein_relative_absolute_strength_response_frequency_reinforcement
@@ -525,6 +527,30 @@ public extension CynologySources {
                     ),
                     date: CynologySources.published("2014"),
                     doi: "10.1504/IJLT.2014.064488",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .negative_effects_positive_reinforcement:
+                return CynologySources.entry(
+                    title: "Negative Effects of Positive Reinforcement",
+                    location: CynologySources.doi_location(
+                        "10.1007/BF03392064"
+                    ),
+                    authors: CynologySources.authors(
+                        "Michael Perone"
+                    ),
+                    date: CynologySources.published(
+                        "2003"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "The Behavior Analyst",
+                        volume: "26",
+                        issue: "1",
+                        pages: "1-14"
+                    ),
+                    doi: "10.1007/BF03392064",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -1733,10 +1759,12 @@ public extension CynologySources {
                  .positive_negative_reinforcement_control,
                  .basic_principles_of_operant_conditioning,
                  .reward_and_punishment_distinct_factors,
-                 .operant_conditioning_for_interaction_designers:
+                 .operant_conditioning_for_interaction_designers,
+                 .negative_effects_positive_reinforcement:
                 return .cynology(
                     .learning_theory,
-                    .operant_conditioning
+                    .operant_conditioning,
+                    .reinforcement
                 )
 
             case .relative_and_absolute_strength_of_response,

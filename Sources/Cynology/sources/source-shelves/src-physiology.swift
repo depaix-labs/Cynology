@@ -216,6 +216,17 @@ public extension CynologySources {
         // old: CynologyWelfareSource.littlewood_heslop_cobb_agency_domain_behavioral_interactions
         case agency_domain
 
+        case five_domains_model_2020
+        case five_domains_operational_details
+        case understanding_animal_welfare
+        case animal_welfare_scientific_conception
+        case science_animal_suffering
+        case animal_suffering_science_welfare
+        case positive_animal_welfare_consensus
+        case companion_animal_qol_vet_practice
+        case companion_kennelled_dog_qol_review
+        case multidimensional_qol_hab_companion_dogs
+
         // old: CynologyWelfareSource.rooney_gaines_bradshaw_kenneling_prior_habituation
         case kenneling_prior_habituation
 
@@ -1992,6 +2003,242 @@ public extension CynologySources {
                         "2023-11-02"
                     ),
                     doi: "10.3389/fvets.2023.1284869",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .five_domains_model_2020:
+                return CynologySources.entry(
+                    title: "The 2020 Five Domains Model: Including Human–Animal Interactions in Assessments of Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.3390/ani10101870"
+                    ),
+                    authors: CynologySources.authors(
+                        "David J. Mellor, Ngaio J. Beausoleil, Katherine E. Littlewood, Andrew N. McLean, Paul D. McGreevy, Bidda Jones, Cristina Wilkins"
+                    ),
+                    date: CynologySources.published(
+                        "2020-10-14"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animals",
+                        volume: "10",
+                        issue: "10",
+                        pages: "1870"
+                    ),
+                    doi: "10.3390/ani10101870",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .five_domains_operational_details:
+                return CynologySources.entry(
+                    title: "Operational Details of the Five Domains Model and Its Key Applications to the Assessment and Management of Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.3390/ani7080060"
+                    ),
+                    authors: CynologySources.authors(
+                        "David J. Mellor"
+                    ),
+                    date: CynologySources.published(
+                        "2017-08-09"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animals",
+                        volume: "7",
+                        issue: "8",
+                        pages: "60"
+                    ),
+                    doi: "10.3390/ani7080060",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .understanding_animal_welfare:
+                return CynologySources.entry(
+                    title: "Understanding Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.1186/1751-0147-50-S1-S1"
+                    ),
+                    authors: CynologySources.authors(
+                        "David Fraser"
+                    ),
+                    date: CynologySources.published(
+                        "2008-08-19"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Acta Veterinaria Scandinavica",
+                        volume: "50",
+                        issue: "Suppl 1",
+                        pages: "S1"
+                    ),
+                    doi: "10.1186/1751-0147-50-S1-S1",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .animal_welfare_scientific_conception:
+                return CynologySources.entry(
+                    title: "A Scientific Conception of Animal Welfare that Reflects Ethical Concerns",
+                    location: CynologySources.web_location(
+                        "https://www.cambridge.org/core/journals/animal-welfare/article/scientific-conception-of-animal-welfare-that-reflects-ethical-concerns/E82895A1A177EE4C83873F695BCF6DF3"
+                    ),
+                    authors: CynologySources.authors(
+                        "David Fraser, Donald M. Weary, Edward A. Pajor, Barry N. Milligan"
+                    ),
+                    date: CynologySources.published(
+                        "1997"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animal Welfare",
+                        volume: "6",
+                        pages: "187-205"
+                    ),
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .science_animal_suffering:
+                return CynologySources.entry(
+                    title: "The Science of Animal Suffering",
+                    location: CynologySources.doi_location(
+                        "10.1111/j.1439-0310.2008.01557.x"
+                    ),
+                    authors: CynologySources.authors(
+                        "Marian Stamp Dawkins"
+                    ),
+                    date: CynologySources.published(
+                        "2008"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Ethology",
+                        volume: "114",
+                        pages: "937-945"
+                    ),
+                    doi: "10.1111/j.1439-0310.2008.01557.x",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .animal_suffering_science_welfare:
+                return CynologySources.entry(
+                    title: "Animal Suffering: The Science of Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.1007/978-94-009-5905-7"
+                    ),
+                    authors: CynologySources.authors(
+                        "Marian Stamp Dawkins"
+                    ),
+                    date: CynologySources.published(
+                        "1980-11-20"
+                    ),
+                    container: ReferenceContainer.book(
+                        title: "Animal Suffering: The Science of Animal Welfare",
+                        publisher: "Springer Dordrecht",
+                        edition: "First edition",
+                        isbn: "9780412225901"
+                    ),
+                    doi: "10.1007/978-94-009-5905-7",
+                    kind: .book,
+                    channel: .scholarly,
+                    tags: facets
+                )
+
+            case .positive_animal_welfare_consensus:
+                return CynologySources.entry(
+                    title: "A Consensus on the Definition of Positive Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.1098/rsbl.2024.0382"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jean-Loup Rault, et al."
+                    ),
+                    date: CynologySources.published(
+                        "2025-01-22"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Biology Letters",
+                        volume: "21",
+                        issue: "1",
+                        pages: "20240382"
+                    ),
+                    doi: "10.1098/rsbl.2024.0382",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .companion_animal_qol_vet_practice:
+                return CynologySources.entry(
+                    title: "Assessment of Quality of Life in Veterinary Practice: Developing Tools for Companion Animal Carers and Veterinarians",
+                    location: CynologySources.doi_location(
+                        "10.2147/VMRR.S62079"
+                    ),
+                    authors: CynologySources.authors(
+                        "Siobhan Mullan"
+                    ),
+                    date: CynologySources.published(
+                        "2015-05-21"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Veterinary Medicine: Research and Reports",
+                        volume: "6",
+                        pages: "203-210"
+                    ),
+                    doi: "10.2147/VMRR.S62079",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .companion_kennelled_dog_qol_review:
+                return CynologySources.entry(
+                    title: "Assessing Quality of Life in Companion and Kennelled Dogs: A Critical Review",
+                    location: CynologySources.doi_location(
+                        "10.1017/S0962728600031778"
+                    ),
+                    authors: CynologySources.authors(
+                        "C. J. Hewson, E. F. Hiby, J. W. S. Bradshaw"
+                    ),
+                    date: CynologySources.published(
+                        "2007-05"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animal Welfare",
+                        volume: "16",
+                        issue: "S1",
+                        pages: "89-95"
+                    ),
+                    doi: "10.1017/S0962728600031778",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .multidimensional_qol_hab_companion_dogs:
+                return CynologySources.entry(
+                    title: "Multidimensional Quality of Life and Human–Animal Bond Measures for Companion Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.jveb.2010.06.002"
+                    ),
+                    authors: CynologySources.authors(
+                        "Tamera R. Schneider, Joseph B. Lyons, Mark A. Tetrick, Eynav E. Accortt"
+                    ),
+                    date: CynologySources.published(
+                        "2010-11"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Journal of Veterinary Behavior",
+                        volume: "5",
+                        issue: "6",
+                        pages: "287-301"
+                    ),
+                    doi: "10.1016/j.jveb.2010.06.002",
                     kind: .article,
                     channel: .peer_reviewed,
                     tags: facets
@@ -5095,17 +5342,36 @@ public extension CynologySources {
                  .canine_welfare_science,
                  .choice_control_welfare,
                  .agency_domain,
+                 .five_domains_model_2020,
+                 .five_domains_operational_details,
+                 .understanding_animal_welfare,
+                 .animal_welfare_scientific_conception,
+                 .science_animal_suffering,
+                 .animal_suffering_science_welfare,
+                 .positive_animal_welfare_consensus,
                  .kenneling_prior_habituation,
                  .working_dog_welfare_guide:
                 return .cynology(
                     .welfare,
-                    .physiology
+                    .physiology,
+                    .affective_state,
+                    .methodology
                 )
 
             case .companion_dog_welfare_living_conditions:
                 return .cynology(
                     .welfare,
                     .canine_behavior,
+                    .human_dog_relationship
+                )
+
+            case .companion_animal_qol_vet_practice,
+                 .companion_kennelled_dog_qol_review,
+                 .multidimensional_qol_hab_companion_dogs:
+                return .cynology(
+                    .welfare,
+                    .assessment,
+                    .clinical_behavior,
                     .human_dog_relationship
                 )
 
