@@ -11,6 +11,8 @@ public extension CynologySources {
         case bioethics_the_basics
         case basics_of_bioethics
 
+        case agency_accountability_framework
+
         public var data: ReferenceData {
             switch self {
             case .bioethics_fifty_puzzles:
@@ -165,6 +167,51 @@ public extension CynologySources {
                     ],
                     tags: facets
                 )
+
+            case .agency_accountability_framework:
+                return CynologySources.entry(
+                    title: "The Agency-Accountability Framework",
+                    location: CynologySources.web_location(
+                        "https://kynology.org/agency-accountability-framework/"
+                    ),
+                    authors: CynologySources.authors(
+                        [
+                            CynologySources.author(
+                                given: "Stewart",
+                                family: "Hilliard"
+                            )
+                        ]
+                    ),
+                    container: ReferenceContainer.website(
+                        title: "Kynology.org",
+                        publisher: "Kynology"
+                    ),
+                    kind: .webpage,
+                    channel: .professional,
+                    abstract: .summary(
+                        "A conceptual framework for evaluating dog-training methods through instrumental agency, limited choice agency, dog welfare, guardian accountability, and communal welfare. The framework draws on comparative psychology, stress science, welfare science, ethics, and philosophy."
+                    ),
+                    notes: [
+                        .note(
+                            "Written by Stewart Hilliard and based on discussions with Michael Ellis and Forrest Micke beginning in 2023."
+                        ),
+                        .note(
+                            "Kynology describes this as a living framework that may be expanded or revised. This webpage is a professional conceptual source, not a peer-reviewed scholarly publication."
+                        ),
+                        .note(
+                            "The presentation consulted on 2026-07-17 identifies itself as Version 1.0. Preserve that consulted version separately when documenting or quoting the framework."
+                        )
+                    ],
+                    relations: [
+                        .sameWork(
+                            title: "Internet Archive captures",
+                            location: CynologySources.web_location(
+                                "https://web.archive.org/web/*/https://kynology.org/agency-accountability-framework/"
+                            )
+                        )
+                    ],
+                    tags: facets
+                )
             }
         }
 
@@ -183,6 +230,18 @@ public extension CynologySources {
                     .bioethics,
                     .welfare,
                     .aversives,
+                    .methodology
+                )
+
+            case .agency_accountability_framework:
+                return .cynology(
+                    .agency,
+                    .predictability_and_control,
+                    .choice_agency,
+                    .welfare,
+                    .bioethics,
+                    .aversives,
+                    .training_methods,
                     .methodology
                 )
             }
