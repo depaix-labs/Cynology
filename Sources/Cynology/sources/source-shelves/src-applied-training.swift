@@ -70,6 +70,7 @@ public extension CynologySources {
         case default_variant_behaviour_operant_training
         case scentwork_traditional_training_welfare_bond
         case partial_rewarding_clicker_training_affective_state
+        case four_windows_theory
 
         // MARK: - BehaviorModification
 
@@ -603,6 +604,49 @@ public extension CynologySources {
                     doi: "10.1007/s10071-020-01425-9",
                     kind: .article,
                     channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .four_windows_theory:
+                return CynologySources.entry(
+                    title: "Foundations Lesson Plan",
+                    location: CynologySources.web_location(
+                        "https://nldogs.com/pages/foundations-lesson-plan"
+                    ),
+                    authors: CynologySources.authors(
+                        [
+                            CynologySources.author(
+                                given: "Jay",
+                                family: "Jack"
+                            )
+                        ]
+                    ),
+                    container: ReferenceContainer.website(
+                        title: "Next Level Dogs",
+                        publisher: "Next Level Dogs"
+                    ),
+                    kind: .webpage,
+                    channel: .professional,
+                    abstract: .summary(
+                        "Jay Jack's practitioner-developed Four Windows framework divides life with a dog into four contextual modes: Play With Me, Find Your Own Fun, Calm Liberty, and Work. Each window communicates a broader range of acceptable behavior, engagement, and arousal rather than prescribing a single trained response."
+                    ),
+                    notes: [
+                        .note(
+                            "This is an original professional source from the framework's originator. The Four Windows framework should be treated as a practitioner-developed training model, not as a peer-reviewed or empirically validated scientific taxonomy."
+                        ),
+                        .note(
+                            "The framework uses contextual verbal cues to distinguish interactive play, independent activity, calm freedom, and directed work."
+                        )
+                    ],
+                    relations: [
+                        ReferenceRelation(
+                            kind: .related,
+                            title: "The 4 Windows with Jay Jack",
+                            location: CynologySources.web_location(
+                                "https://podcasts.apple.com/us/podcast/the-4-windows-with-jay-jack/id1236584605?i=1000519828991"
+                            )
+                        )
+                    ],
                     tags: facets
                 )
 
@@ -1353,6 +1397,16 @@ public extension CynologySources {
                     .training_methods,
                     .affective_state,
                     .welfare
+                )
+
+            case .four_windows_theory:
+                return .cynology(
+                    .training_methods,
+                    .communication,
+                    .context_renewal,
+                    .engagement,
+                    .play,
+                    .enrichment
                 )
 
             case .problem_solving_games_fear_strangers:
