@@ -165,6 +165,7 @@ public extension CynologySources {
         case cheetah_scat_detection_accuracy
 
         case exercise_intensity_duration_odor_detection_performance
+        case value_of_sniffing_scoping_review
 
         // MARK: - WorkingDogBooks
 
@@ -1255,6 +1256,29 @@ public extension CynologySources {
                     channel: .professional,
                     tags: facets
                 )
+
+            case .value_of_sniffing_scoping_review:
+                return CynologySources.entry(
+                    title: "The Value of Sniffing: A Scoping Review of Scent Activities for Canines",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2024.106485"
+                    ),
+                    authors: CynologySources.authors(
+                        "Jade Fountain, Eduardo J. Fernandez, Todd J. McWhorter, Susan J. Hazel"
+                    ),
+                    date: CynologySources.published(
+                        "2025-01"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "282",
+                        pages: "106485"
+                    ),
+                    doi: "10.1016/j.applanim.2024.106485",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
             }
         }
 
@@ -1459,6 +1483,15 @@ public extension CynologySources {
                 return .cynology(
                     .working_dogs,
                     .welfare
+                )
+
+            case .value_of_sniffing_scoping_review:
+                return .cynology(
+                    .enrichment,
+                    .welfare,
+                    .working_dogs,
+                    .canine_behavior,
+                    .physiology
                 )
             }
         }

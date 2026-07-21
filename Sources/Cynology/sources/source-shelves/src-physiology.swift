@@ -239,6 +239,12 @@ public extension CynologySources {
         // old: CynologyWelfareSource.hunt_whiteside_prankel_environmental_enrichment_dog_behaviour
         case environmental_enrichment_dog_behaviour
 
+        case environmental_enrichment_kennelled_dogs
+        case environmental_enrichment_information_opportunities
+        case therapy_dog_positive_welfare_temperament
+        case canine_olfaction_physiology_applications
+        case olfaction_applied_ethology_welfare
+
         // MARK: - StressAndLearning
 
         // old: CynologyWelfareSource.blackwell_bodnariu_tyson_bradshaw_casey_high_urinary_cortisol
@@ -5073,6 +5079,124 @@ public extension CynologySources {
                     channel: .peer_reviewed,
                     tags: facets
                 )
+
+            case .environmental_enrichment_kennelled_dogs:
+                return CynologySources.entry(
+                    title: "A Review of Environmental Enrichment for Kennelled Dogs, Canis familiaris",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.applanim.2003.11.005"
+                    ),
+                    authors: CynologySources.authors(
+                        "Deborah L. Wells"
+                    ),
+                    date: CynologySources.published(
+                        "2004"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Applied Animal Behaviour Science",
+                        volume: "85",
+                        issue: "3–4",
+                        pages: "307–317"
+                    ),
+                    doi: "10.1016/j.applanim.2003.11.005",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .environmental_enrichment_information_opportunities:
+                return CynologySources.entry(
+                    title: "Review: Rethinking Environmental Enrichment as Providing Opportunities to Acquire Information",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.animal.2024.101251"
+                    ),
+                    authors: CynologySources.authors(
+                        "Isabelle Veissier, Clémence Lesimple, Véronique Brunet, Lucie Aubé, Raphaël Botreau"
+                    ),
+                    date: CynologySources.published(
+                        "2024-09"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animal",
+                        volume: "18",
+                        issue: "9",
+                        pages: "101251"
+                    ),
+                    doi: "10.1016/j.animal.2024.101251",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .therapy_dog_positive_welfare_temperament:
+                return CynologySources.entry(
+                    title: "The Importance of Evaluating Positive Welfare Characteristics and Temperament in Working Therapy Dogs",
+                    location: CynologySources.doi_location(
+                        "10.3389/fvets.2022.844252"
+                    ),
+                    authors: CynologySources.authors(
+                        "Stephanie L. Miller, James A. Serpell, Kyle R. Dalton, Kathryn B. Waite, Daniel O. Morris, Laurel E. Redding, Nancy A. Dreschel, Meghan F. Davis"
+                    ),
+                    date: CynologySources.published(
+                        "2022-04-04"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Frontiers in Veterinary Science",
+                        volume: "9",
+                        pages: "844252"
+                    ),
+                    doi: "10.3389/fvets.2022.844252",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .canine_olfaction_physiology_applications:
+                return CynologySources.entry(
+                    title: "Canine Olfaction: Physiology, Behavior, and Possibilities for Practical Applications",
+                    location: CynologySources.doi_location(
+                        "10.3390/ani11082463"
+                    ),
+                    authors: CynologySources.authors(
+                        "Aleksandra Kokocińska-Kusiak, Marta Woszczyło, Małgorzata Matulaniec, Krzysztof Burnat, Tadeusz Jezierski, Agnieszka Ludwiczak, Mateusz Dzięcioł"
+                    ),
+                    date: CynologySources.published(
+                        "2021-08-21"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Animals",
+                        volume: "11",
+                        issue: "8",
+                        pages: "2463"
+                    ),
+                    doi: "10.3390/ani11082463",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .olfaction_applied_ethology_welfare:
+                return CynologySources.entry(
+                    title: "Olfaction: An Overlooked Sensory Modality in Applied Ethology and Animal Welfare",
+                    location: CynologySources.doi_location(
+                        "10.3389/fvets.2015.00069"
+                    ),
+                    authors: CynologySources.authors(
+                        "Birte L. Nielsen, Tadeusz Jezierski, J. Elizabeth Bolhuis, Luisa Amo, Frank Rosell, Marije Oostindjer, Janne W. Christensen, Dorothy McKeegan, Deborah L. Wells, Peter Hepper"
+                    ),
+                    date: CynologySources.published(
+                        "2015-12-22"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Frontiers in Veterinary Science",
+                        volume: "2",
+                        pages: "69"
+                    ),
+                    doi: "10.3389/fvets.2015.00069",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
             }
         }
 
@@ -5734,6 +5858,38 @@ public extension CynologySources {
                     .anxiety,
                     .assessment,
                     .canine_body_language
+                )
+
+            case .therapy_dog_positive_welfare_temperament:
+                return .cynology(
+                    .working_dogs,
+                    .welfare,
+                    .temperament,
+                    .assessment,
+                    .human_dog_relationship
+                )
+
+            case .environmental_enrichment_kennelled_dogs,
+                 .environmental_enrichment_information_opportunities:
+                return .cynology(
+                    .enrichment,
+                    .welfare,
+                    .canine_behavior
+                )
+
+            case .canine_olfaction_physiology_applications:
+                return .cynology(
+                    .physiology,
+                    .canine_behavior,
+                    .working_dogs
+                )
+
+            case .olfaction_applied_ethology_welfare:
+                return .cynology(
+                    .physiology,
+                    .enrichment,
+                    .welfare,
+                    .canine_behavior
                 )
             }
         }

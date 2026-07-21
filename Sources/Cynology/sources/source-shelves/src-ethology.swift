@@ -212,6 +212,13 @@ public extension CynologySources {
         // old: CynologyCommunicationSource.kaufer_canine_play_behavior
         case canine_play_behavior
 
+        case behavioural_biology_of_dogs
+        case free_ranging_dog_social_ecology
+        case dog_domestication_process_review
+        case indispensable_dog
+        case dog_lineages_behavioral_diversification
+        case dog_genomics_breed_stereotypes
+
         public var data: ReferenceData {
             switch self {
             case .shake_it_off:
@@ -1560,6 +1567,145 @@ public extension CynologySources {
                     channel: .professional,
                     tags: facets
                 )
+
+            case .behavioural_biology_of_dogs:
+                return CynologySources.entry(
+                    title: "The Behavioural Biology of Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1079/9781845931872.0000"
+                    ),
+                    authors: CynologySources.authors(
+                        "Per Jensen"
+                    ),
+                    date: CynologySources.published(
+                        "2007"
+                    ),
+                    container: ReferenceContainer.book(
+                        title: "The Behavioural Biology of Dogs",
+                        publisher: "CABI"
+                    ),
+                    doi: "10.1079/9781845931872.0000",
+                    kind: .book,
+                    channel: .textbook,
+                    tags: facets
+                )
+
+            case .free_ranging_dog_social_ecology:
+                return CynologySources.entry(
+                    title: "Behaviour and Social Ecology of Free-Ranging Dogs",
+                    location: CynologySources.doi_location(
+                        "10.1079/9781845931872.0147"
+                    ),
+                    authors: CynologySources.authors(
+                        "Luigi Boitani, Paolo Ciucci, Alessandra Ortolani"
+                    ),
+                    date: CynologySources.published(
+                        "2007"
+                    ),
+                    container: ReferenceContainer.book(
+                        title: "The Behavioural Biology of Dogs",
+                        publisher: "CABI"
+                    ),
+                    doi: "10.1079/9781845931872.0147",
+                    kind: .book_chapter,
+                    channel: .scholarly,
+                    tags: facets
+                )
+
+            case .dog_domestication_process_review:
+                return CynologySources.entry(
+                    title: "Being a Dog: A Review of the Domestication Process",
+                    location: CynologySources.doi_location(
+                        "10.3390/genes14050992"
+                    ),
+                    authors: CynologySources.authors(
+                        "Danilo Tancredi, Isabella Cardinali"
+                    ),
+                    date: CynologySources.published(
+                        "2023-04-27"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Genes",
+                        volume: "14",
+                        issue: "5",
+                        pages: "992"
+                    ),
+                    doi: "10.3390/genes14050992",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .indispensable_dog:
+                return CynologySources.entry(
+                    title: "The Indispensable Dog",
+                    location: CynologySources.doi_location(
+                        "10.3389/fpsyg.2021.656529"
+                    ),
+                    authors: CynologySources.authors(
+                        "Clive D. L. Wynne"
+                    ),
+                    date: CynologySources.published(
+                        "2021-07-16"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Frontiers in Psychology",
+                        volume: "12",
+                        pages: "656529"
+                    ),
+                    doi: "10.3389/fpsyg.2021.656529",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .dog_lineages_behavioral_diversification:
+                return CynologySources.entry(
+                    title: "Domestic Dog Lineages Reveal Genetic Drivers of Behavioral Diversification",
+                    location: CynologySources.doi_location(
+                        "10.1016/j.cell.2022.11.003"
+                    ),
+                    authors: CynologySources.authors(
+                        "Emily V. Dutrow, James A. Serpell, Elaine A. Ostrander"
+                    ),
+                    date: CynologySources.published(
+                        "2022-12-08"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Cell",
+                        volume: "185",
+                        issue: "25",
+                        pages: "4737–4755.e18"
+                    ),
+                    doi: "10.1016/j.cell.2022.11.003",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
+
+            case .dog_genomics_breed_stereotypes:
+                return CynologySources.entry(
+                    title: "Ancestry-Inclusive Dog Genomics Challenges Popular Breed Stereotypes",
+                    location: CynologySources.doi_location(
+                        "10.1126/science.abk0639"
+                    ),
+                    authors: CynologySources.authors(
+                        "Kathleen Morrill, Jessica Hekman, Xue Li, et al."
+                    ),
+                    date: CynologySources.published(
+                        "2022-04-29"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Science",
+                        volume: "376",
+                        issue: "6592",
+                        pages: "eabk0639"
+                    ),
+                    doi: "10.1126/science.abk0639",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    tags: facets
+                )
             }
         }
 
@@ -1755,6 +1901,35 @@ public extension CynologySources {
                 return .cynology(
                     .canine_behavior,
                     .communication
+                )
+
+            case .behavioural_biology_of_dogs:
+                return .cynology(
+                    .canine_behavior,
+                    .socialization,
+                    .human_dog_relationship
+                )
+
+            case .free_ranging_dog_social_ecology:
+                return .cynology(
+                    .canine_behavior,
+                    .dominance,
+                    .human_dog_relationship
+                )
+
+            case .dog_domestication_process_review,
+                 .indispensable_dog:
+                return .cynology(
+                    .canine_behavior,
+                    .human_dog_relationship
+                )
+
+            case .dog_lineages_behavioral_diversification,
+                 .dog_genomics_breed_stereotypes:
+                return .cynology(
+                    .canine_behavior,
+                    .temperament,
+                    .methodology
                 )
             }
         }
