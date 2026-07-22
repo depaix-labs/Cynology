@@ -386,6 +386,7 @@ public extension CynologySources {
 
         // old: CynologyWelfareSource.westgate_wilson_boring_thoughts_bored_minds_mac_model
         case boring_thoughts_bored_minds
+        case boredom_aversive_stimuli_positive_alternative
 
         // old: CynologyWelfareSource.inzlicht_shenhav_olivola_effort_paradox_costly_valued
         case effort_paradox
@@ -3402,6 +3403,37 @@ public extension CynologySources {
                     tags: facets
                 )
 
+            case .boredom_aversive_stimuli_positive_alternative:
+                return CynologySources.entry(
+                    title: "Sounds Boring: The Causal Effect of Boredom on Self-Administration of Aversive Stimuli in the Presence of a Positive Alternative",
+                    location: CynologySources.doi_location(
+                        "10.1007/s11031-023-10053-y"
+                    ),
+                    authors: CynologySources.authors(
+                        "Morsal Khouwaga Yusoufzai, Chantal Nederkoorn, Jill Lobbestael, Linda Vancleef"
+                    ),
+                    date: CynologySources.published(
+                        "2024-02-13"
+                    ),
+                    container: ReferenceContainer.journal(
+                        title: "Motivation and Emotion",
+                        volume: "48",
+                        pages: "222–236"
+                    ),
+                    doi: "10.1007/s11031-023-10053-y",
+                    kind: .article,
+                    channel: .peer_reviewed,
+                    abstract: .summary(
+                        "Experimental human study examining whether boredom increases voluntary self-administration of aversive stimuli when a positive behavioral alternative is simultaneously available. Bored participants selected aversive sounds more frequently than participants in neutral and anger conditions, despite also being able to select positive sounds."
+                    ),
+                    notes: [
+                        .note(
+                            "Human experimental evidence rather than direct canine evidence. Relevant to boredom as a motivational state, maladaptive stimulation-seeking, response allocation, and the possibility that merely providing a positive alternative does not guarantee selection of that alternative."
+                        )
+                    ],
+                    tags: facets
+                )
+
             case .effort_paradox:
                 return CynologySources.entry(
                     title: "The Effort Paradox: Effort Is Both Costly and Valued",
@@ -5603,6 +5635,7 @@ public extension CynologySources {
 
             case .flow_optimal_experience,
                  .boring_thoughts_bored_minds,
+                 .boredom_aversive_stimuli_positive_alternative,
                  .effort_paradox,
                  .effort_increases_meaning,
                  .breaking_monotony_with_meaning,
