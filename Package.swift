@@ -31,17 +31,17 @@ let package = Package(
         // ),
     ],
     dependencies: [
-        // .package(url: "https://github.com/leviouwendijk/Primitives.git", branch: "master"),
-        // .package(url: "https://github.com/leviouwendijk/Methods.git", branch: "master"),
-        .package(url: "https://github.com/leviouwendijk/References.git", branch: "master"),
+        // .package(url: "https://github.com/swift-lco/Primitives.git", branch: "master"),
+        // .package(url: "https://github.com/swift-lco/Methods.git", branch: "master"),
+        .package(url: "https://github.com/swift-lco/References.git", branch: "master"),
 
-        // .package(url: "https://github.com/leviouwendijk/Implementations.git", branch: "master"),
+        // .package(url: "https://github.com/swift-lco/Implementations.git", branch: "master"),
         // .package(url: "https://github.com/swift-dsl/HTML.git", branch: "master"),
         // .package(url: "https://github.com/swift-dsl/CSS.git", branch: "master"),
-        // .package(url: "https://github.com/leviouwendijk/Writers.git", branch: "master"),
-        // // .package(url: "https://github.com/leviouwendijk/Terminal.git", branch: "master"),
+        // .package(url: "https://github.com/swift-lco/Writers.git", branch: "master"),
+        // // .package(url: "https://github.com/swift-lco/Terminal.git", branch: "master"),
 
-        // .package(url: "https://github.com/leviouwendijk/Interfaces.git", branch: "master"),
+        // .package(url: "https://github.com/swift-lco/Interfaces.git", branch: "master"),
     ],
     targets: [
         .target(
