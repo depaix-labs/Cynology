@@ -36,8 +36,8 @@ let package = Package(
         .package(url: "https://github.com/leviouwendijk/References.git", branch: "master"),
 
         // .package(url: "https://github.com/leviouwendijk/Implementations.git", branch: "master"),
-        // .package(url: "https://github.com/leviouwendijk/HTML.git", branch: "master"),
-        // .package(url: "https://github.com/leviouwendijk/CSS.git", branch: "master"),
+        // .package(url: "https://github.com/swift-dsl/HTML.git", branch: "master"),
+        // .package(url: "https://github.com/swift-dsl/CSS.git", branch: "master"),
         // .package(url: "https://github.com/leviouwendijk/Writers.git", branch: "master"),
         // // .package(url: "https://github.com/leviouwendijk/Terminal.git", branch: "master"),
 
